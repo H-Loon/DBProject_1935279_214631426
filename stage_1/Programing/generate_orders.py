@@ -1,12 +1,10 @@
 import random
 from datetime import datetime, timedelta
 
-# פתיחת קובץ לכתיבת פקודות ה-SQL
 with open('orders_insert.sql', 'w', encoding='utf-8') as f:
     
     statuses = ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
     
-    # ייצור 20,000 הזמנות
     for order_id in range(1, 20001):
         # הגרלת תאריך רנדומלי בשנה האחרונה
         random_days = random.randint(0, 365)
