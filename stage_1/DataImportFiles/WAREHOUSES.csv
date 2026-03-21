@@ -1,4 +1,4 @@
-WarehouseID,Location,Capacity
+warehouseid,location,capacity
 1,Location_1,Capacity_1
 2,Location_2,Capacity_2
 3,Location_3,Capacity_3
