@@ -1,5 +1,48 @@
 -- CUSTOMERS
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (1, 'Denni', 'Vincent', 'dvincent0@oaic.gov.au', '341-376-5118', '2025-04-01');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (2, 'Tallie', 'Reddy', 'treddy1@jimdo.com', '317-234-2958', '2025-11-14');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (3, 'Manfred', 'Dominico', 'mdominico2@blogtalkradio.com', '390-657-9689', '2026-03-03');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (4, 'Shaylynn', 'Hutcheson', 'shutcheson3@ehow.com', '772-871-9537', '2025-12-20');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (5, 'Dannye', 'Wescott', 'dwescott4@goodreads.com', '977-989-6218', '2025-06-19');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (6, 'Sadella', 'Nizet', 'snizet5@homestead.com', '473-504-0679', '2025-03-26');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (7, 'Ave', 'Shufflebotham', 'ashufflebotham6@freewebs.com', '807-420-0607', '2025-04-21');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (8, 'Caitlin', 'Somerton', 'csomerton7@dropbox.com', '967-275-3310', '2025-12-05');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (9, 'Clea', 'Gumm', 'cgumm8@webnode.com', '476-657-2706', '2025-09-30');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (10, 'Rana', 'Dumingos', 'rdumingos9@dailymail.co.uk', '990-102-1412', '2025-08-04');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (11, 'Jeramie', 'Linkie', 'jlinkiea@1und1.de', '980-471-3241', '2025-05-26');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (12, 'Davita', 'Sainer', 'dsainerb@wikispaces.com', '840-738-8734', '2025-12-31');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (13, 'Dory', 'Philip', 'dphilipc@fema.gov', '598-608-2876', '2025-10-18');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (14, 'Borg', 'Haskayne', 'bhaskayned@google.cn', '876-637-3353', '2025-08-13');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (15, 'Kandace', 'Britten', 'kbrittene@indiegogo.com', '658-773-2860', '2025-12-29');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (16, 'Donna', 'Vaan', 'dvaanf@chicagotribune.com', '534-346-1669', '2025-08-01');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (17, 'Jocelyn', 'Gayler', 'jgaylerg@nba.com', '347-595-3858', '2026-02-12');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (18, 'Eryn', 'Elgee', 'eelgeeh@indiegogo.com', '870-854-5104', '2025-05-12');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (19, 'Jaimie', 'Baldock', 'jbaldocki@dedecms.com', '105-993-6077', '2025-09-22');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (20, 'Katusha', 'Ramelet', 'krameletj@last.fm', '656-840-5761', '2025-04-22');
+insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (21, 'Hermy', 'Lusk', 'hluskk@deviantart.com', '790-902-4326', '2026-02-17');
+
 -- EMPLOYEES
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (1, 'Aymer', 'Korejs', 'Quality Control Specialist', '2026-01-02', 238);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (2, 'Avrit', 'Hallibone', 'Associate Professor', '2025-10-19', 481);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (3, 'Darby', 'Strong', 'VP Quality Control', '2026-02-21', 249);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (4, 'Shannon', 'Hedde', 'Business Systems Development Analyst', '2025-05-21', 111);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (5, 'Cully', 'Kenwell', 'Geological Engineer', '2025-11-09', 157);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (6, 'Junie', 'Campos', 'Mechanical Systems Engineer', '2025-06-13', 352);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (7, 'Kitti', 'Pesticcio', 'VP Accounting', '2025-10-11', 98);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (8, 'Norma', 'Girauld', 'Media Manager II', '2025-06-08', 14);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (9, 'Ty', 'Durno', 'Graphic Designer', '2025-12-31', 420);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (10, 'Virgilio', 'Sonnenschein', 'General Manager', '2025-06-05', 223);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (11, 'Rollins', 'Monument', 'Nurse', '2025-06-25', 422);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (12, 'Osgood', 'Ricold', 'Product Engineer', '2025-04-12', 357);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (13, 'Bernard', 'Ferenczy', 'Software Test Engineer IV', '2025-06-05', 296);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (14, 'Haley', 'Braben', 'VP Sales', '2025-06-06', 300);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (15, 'Netti', 'Buckeridge', 'Technical Writer', '2025-03-20', 127);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (16, 'Denni', 'Calcut', 'VP Marketing', '2025-11-04', 399);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (17, 'Meridith', 'Akenhead', 'Registered Nurse', '2025-06-21', 18);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (18, 'Johnny', 'Glazebrook', 'Account Coordinator', '2025-09-23', 77);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (19, 'Noe', 'Galloway', 'Nuclear Power Engineer', '2025-05-15', 295);
+insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (20, 'Aarika', 'Bleier', 'Database Administrator II', '2025-10-29', 99);
+
 -- ORDERS
 INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (1, '2025-04-10', 'Address 1', 'Shipped', 172, 78, NULL, 259);
 INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (2, '2025-05-30', 'Address 2', 'Shipped', 27, 43, NULL, 151);
@@ -47,10 +90,72 @@ INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (1, 434
 INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (3, 318.4, 480, 11) ON CONFLICT DO NOTHING;
 
 -- PRODUCTS
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (1, 'Glass - Wine, Plastic, Clear 5 Oz', 100.9, 575, 336, 254, 106);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (2, 'Beef - Kobe Striploin', 914.92, 306, 263, 270, 474);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (3, 'Ecolab - Balanced Fusion', 905.98, 0, 195, 104, 258);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (4, 'Sachet', 991.26, 524, 264, 22, 174);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (5, 'Sping Loaded Cup Dispenser', 970.8, 471, 143, 243, 391);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (6, 'Limes', 475.39, 289, 485, 372, 382);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (7, 'Gingerale - Diet - Schweppes', 215.4, 282, 334, 264, 401);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (8, 'Sugar Thermometer', 251.07, 673, 420, 362, 473);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (9, 'Lettuce - Lolla Rosa', 655.55, 454, 485, 95, 210);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (10, 'English Muffin', 993.49, 954, 381, 198, 447);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (11, 'Pasta - Fusili Tri - Coloured', 874.2, 486, 178, 245, 174);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (12, 'Doilies - 7, Paper', 892.38, 461, 211, 240, 118);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (13, 'Pork Casing', 627.34, 536, 124, 414, 37);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (14, 'Tray - 16in Rnd Blk', 369.59, 443, 160, 115, 65);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (15, 'Pork Ham Prager', 584.09, 423, 223, 426, 3);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (16, 'Sugar - Palm', 301.19, 930, 192, 95, 357);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (17, 'Ham - Cooked Italian', 710.79, 218, 437, 331, 19);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (18, 'Energy Drink - Redbull 355ml', 688.91, 539, 77, 419, 124);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (19, 'Mousse - Mango', 524.36, 948, 202, 448, 25);
+insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (20, 'Coriander - Seed', 579.08, 419, 278, 143, 267);
+
 -- SUPPLIERS
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (1, 'Skinix', 'Fiann Tomas', '794-511-9085');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (2, 'Avaveo', 'Gardie Trimnell', '560-255-5390');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (3, 'Chatterpoint', 'Gauthier Jansik', '287-406-6791');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (4, 'Voolia', 'Ibbie Bartlosz', '360-347-2575');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (5, 'Flashdog', 'Camilla Galtone', '385-192-6352');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (6, 'Skippad', 'Dallon Planks', '386-871-6817');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (7, 'Livepath', 'Krispin Dysart', '716-560-8549');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (8, 'Kwimbee', 'Yehudit Kowalik', '144-186-0714');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (9, 'Feedspan', 'Clotilda Haig', '993-154-2759');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (10, 'Mudo', 'Delaney Erwin', '519-358-1115');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (11, 'Wordpedia', 'Valentin Eykelbosch', '285-351-5005');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (12, 'Skimia', 'Germaine MacCurtain', '591-476-7426');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (13, 'Topiclounge', 'Cassaundra Elvidge', '157-134-1858');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (14, 'Jabbersphere', 'Evie Kenneford', '804-868-9073');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (15, 'Chatterpoint', 'Cash de Merida', '693-593-3339');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (16, 'Linktype', 'Elliot Sancroft', '944-672-6596');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (17, 'Zoombox', 'Bran Ryall', '567-544-4580');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (18, 'Babblestorm', 'Sandro Bricket', '577-632-5077');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (19, 'Avavee', 'Sarena Snozzwell', '904-593-6899');
+insert into SUPPLIERS (SupplierID, CompanyName, ContactName, ContactPhone) values (20, 'Photospace', 'Carson Treswell', '614-354-7156');
+
 -- CATEGORIES
 
 -- SHIPPERS
 -- COUPONS
 -- WHAREHOUSE
 -- PRODUCT_REVIEWS
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (1, 4, 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '2025-08-19', 18, 286);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (2, 1, 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', '2025-08-27', 311, 72);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (3, 5, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', '2025-04-16', 473, 361);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (4, 2, 'Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2025-09-14', 363, 111);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (5, 5, 'Sed ante. Vivamus tortor.', '2025-05-16', 199, 392);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (6, 2, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', '2026-01-15', 77, 276);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (7, 5, 'Phasellus in felis.', '2026-03-02', 446, 421);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (8, 5, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', '2026-02-01', 126, 455);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (9, 3, 'Proin risus. Praesent lectus.', '2026-01-05', 347, 279);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (10, 1, 'Proin risus.', '2026-02-22', 218, 44);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (11, 2, 'Donec posuere metus vitae ipsum. Aliquam non mauris.', '2025-12-15', 18, 399);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (12, 4, 'In congue.', '2025-05-05', 89, 57);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (13, 2, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', '2026-02-02', 302, 69);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (14, 3, 'Aliquam non mauris. Morbi non lectus.', '2025-08-28', 391, 372);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (15, 1, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2026-03-02', 353, 345);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (16, 2, 'Aenean lectus.', '2025-10-25', 496, 132);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (17, 2, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', '2026-03-16', 385, 87);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (18, 5, 'Nulla ut erat id mauris vulputate elementum.', '2025-09-28', 423, 97);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (19, 3, 'Sed ante. Vivamus tortor.', '2025-06-06', 87, 493);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (20, 1, 'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', '2025-04-18', 452, 466);
