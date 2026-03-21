@@ -19,7 +19,6 @@ insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, Registrati
 insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (18, 'Eryn', 'Elgee', 'eelgeeh@indiegogo.com', '870-854-5104', '2025-05-12');
 insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (19, 'Jaimie', 'Baldock', 'jbaldocki@dedecms.com', '105-993-6077', '2025-09-22');
 insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (20, 'Katusha', 'Ramelet', 'krameletj@last.fm', '656-840-5761', '2025-04-22');
-insert into CUSTOMERS (CustomerID, FirstName, LastName, Email, Phone, RegistrationDate) values (21, 'Hermy', 'Lusk', 'hluskk@deviantart.com', '790-902-4326', '2026-02-17');
 
 -- EMPLOYEES
 insert into EMPLOYEES (EmployeeID, FirstName, LastName, Role, HireDate, WarehouseID) values (1, 'Aymer', 'Korejs', 'Quality Control Specialist', '2026-01-02', 238);
@@ -64,7 +63,6 @@ INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, Cust
 INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (18, '2026-02-24', 'Address 18', 'Shipped', 296, 312, NULL, 473);
 INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (19, '2025-10-22', 'Address 19', 'Cancelled', 336, 363, NULL, 22);
 INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (20, '2025-11-27', 'Address 20', 'Shipped', 146, 374, NULL, 109);
-INSERT INTO ORDERS (OrderID, OrderDate, ShippingAddress, Status, ShipperID, CustomerID, CouponID, EmployeeID) VALUES (21, '2025-07-17', 'Address 21', 'Shipped', 385, 260, NULL, 227);
 
 -- ORDER_ITEMS
 INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (5, 303.06, 129, 1) ON CONFLICT DO NOTHING;
@@ -87,7 +85,6 @@ INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (2, 63.
 INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (5, 28.2, 368, 10) ON CONFLICT DO NOTHING;
 INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (2, 339.66, 263, 11) ON CONFLICT DO NOTHING;
 INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (1, 434.62, 199, 11) ON CONFLICT DO NOTHING;
-INSERT INTO ORDER_ITEMS (Quantity, UnitPrice, ProductID, OrderID) VALUES (3, 318.4, 480, 11) ON CONFLICT DO NOTHING;
 
 -- PRODUCTS
 insert into PRODUCTS (ProductID, ProductName, Price, StockQuantity, CategoryID, SupplierID, WarehouseID) values (1, 'Glass - Wine, Plastic, Clear 5 Oz', 100.9, 575, 336, 254, 106);
@@ -222,23 +219,23 @@ insert into WAREHOUSES (WarehouseID, Location, Capacity) values (19, 'Location_1
 insert into WAREHOUSES (WarehouseID, Location, Capacity) values (20, 'Location_20', 20);
 
 -- PRODUCT_REVIEWS
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (1, 4, 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '2025-08-19', 18, 286);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (2, 1, 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', '2025-08-27', 311, 72);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (3, 5, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', '2025-04-16', 473, 361);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (4, 2, 'Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2025-09-14', 363, 111);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (5, 5, 'Sed ante. Vivamus tortor.', '2025-05-16', 199, 392);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (6, 2, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', '2026-01-15', 77, 276);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (7, 5, 'Phasellus in felis.', '2026-03-02', 446, 421);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (8, 5, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', '2026-02-01', 126, 455);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (9, 3, 'Proin risus. Praesent lectus.', '2026-01-05', 347, 279);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (10, 1, 'Proin risus.', '2026-02-22', 218, 44);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (11, 2, 'Donec posuere metus vitae ipsum. Aliquam non mauris.', '2025-12-15', 18, 399);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (12, 4, 'In congue.', '2025-05-05', 89, 57);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (13, 2, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', '2026-02-02', 302, 69);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (14, 3, 'Aliquam non mauris. Morbi non lectus.', '2025-08-28', 391, 372);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (15, 1, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2026-03-02', 353, 345);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (16, 2, 'Aenean lectus.', '2025-10-25', 496, 132);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (17, 2, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', '2026-03-16', 385, 87);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (18, 5, 'Nulla ut erat id mauris vulputate elementum.', '2025-09-28', 423, 97);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (19, 3, 'Sed ante. Vivamus tortor.', '2025-06-06', 87, 493);
-insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (20, 1, 'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', '2025-04-18', 452, 466);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (1, 4, 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '2025-08-19', 1, 1);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (2, 1, 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', '2025-08-27', 2, 2);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (3, 5, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', '2025-04-16', 3, 3);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (4, 2, 'Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2025-09-14', 4, 4);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (5, 5, 'Sed ante. Vivamus tortor.', '2025-05-16', 5, 5);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (6, 2, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', '2026-01-15', 6, 6);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (7, 5, 'Phasellus in felis.', '2026-03-02', 7, 7);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (8, 5, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', '2026-02-01', 8, 8);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (9, 3, 'Proin risus. Praesent lectus.', '2026-01-05', 9, 9);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (10, 1, 'Proin risus.', '2026-02-22', 10, 10);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (11, 2, 'Donec posuere metus vitae ipsum. Aliquam non mauris.', '2025-12-15', 11, 11);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (12, 4, 'In congue.', '2025-05-05', 12, 12);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (13, 2, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', '2026-02-02', 13, 13);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (14, 3, 'Aliquam non mauris. Morbi non lectus.', '2025-08-28', 14, 14);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (15, 1, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2026-03-02', 15, 15);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (16, 2, 'Aenean lectus.', '2025-10-25', 16, 16);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (17, 2, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', '2026-03-16', 17, 17);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (18, 5, 'Nulla ut erat id mauris vulputate elementum.', '2025-09-28', 18, 18);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (19, 3, 'Sed ante. Vivamus tortor.', '2025-06-06', 19, 19);
+insert into PRODUCT_REVIEWS (ReviewID, Rating, Comment, ReviewDate, ProductID, CustomerID) values (20, 1, 'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', '2025-04-18', 20, 20);
