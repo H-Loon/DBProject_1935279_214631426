@@ -42,6 +42,6 @@
 התיעוד המלא של כל שלב, כולל תרשימים, החלטות עיצוב, קוד מקור וצילומי מסך, מאוגד בקבצי PDF ייעודיים:
 
 * 📄 **[דוח שלב א' - אפיון, עיצוב ואכלוס נתונים](https://docs.google.com/document/d/1cmE_cGw1IM7HhmZkqKKLArwfNk95RTOP1FyJhCoPwH8/edit?usp=sharing)**
-* 📄 **דוח שלב ב' - שאילתות ועדכונים** *(יעודכן בהמשך)*
+* 📄 **[דוח שלב ב' - שאילתות ועדכונים](https://docs.google.com/document/d/1-cPdIbn3dyE9k9We0vsglyAMqmB4iVqjfgBNn3vdPJE/edit?usp=sharing)**
 * 📄 **דוח שלב ג' - פונקציות וטריגרים** *(יעודכן בהמשך)*
 * 📄 **דוח שלב ד' - אינטגרציה וממשק** *(יעודכן בהמשך)*
