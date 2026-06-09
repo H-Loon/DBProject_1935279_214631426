@@ -56,4 +56,4 @@
 * 📄 **[דוח שלב א' - אפיון, עיצוב ואכלוס נתונים](https://docs.google.com/document/d/1cmE_cGw1IM7HhmZkqKKLArwfNk95RTOP1FyJhCoPwH8/edit?usp=sharing)**
 * 📄 **[דוח שלב ב' - שאילתות ועדכונים](https://docs.google.com/document/d/1-cPdIbn3dyE9k9We0vsglyAMqmB4iVqjfgBNn3vdPJE/edit?usp=sharing)**
 * 📄 **[דוח שלב ג' - אינטגרציה ומבטים](https://docs.google.com/document/d/13BeNbLe_YG2HzYH8Kcs3F9Uf_pQLYuTrjJ_gT0PnQpc/edit?tab=t.0)**
-* 📄 **דוח שלב ד' - פונקציות וטריגרים / ממשק** *(יעודכן בהמשך)*
+* 📄 **[דוח שלב ד' - פונקציות וטריגרים / ממשק** *(יעודכן בהמשך)](https://docs.google.com/document/d/1mqDMp8GoxD5ztXhHaJ2TbPJD3y2ZlmX-fNnb_hM-abM/edit?usp=sharing)**
