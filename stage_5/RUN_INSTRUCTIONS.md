@@ -88,6 +88,15 @@ This starts **both** processes together:
    Stage-4 functions / procedures, supplying parameters (foreign-key
    parameters are dropdowns of names). `NOTICE` output from the PL/pgSQL code
    is shown, so you can see exactly what each procedure did.
+5. **Storefront** (button "Open Storefront" in the top bar) – a customer-facing
+   Amazon-style store built on the same data:
+   * browse products (images, ratings, search, category filter) and read/write reviews;
+   * "shopping as" a chosen customer, add items to a cart;
+   * **checkout places a real order** – it inserts the `orders` + `order_items`
+     rows in one transaction, which fires the Stage-4 stock trigger (stock is
+     decremented, and an out-of-stock item rejects the whole order);
+   * **My Orders** shows the customer's history with status and live delivery
+     tracking from the integrated `remote_logistics` data.
 
 ---
 

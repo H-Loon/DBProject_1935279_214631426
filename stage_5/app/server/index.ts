@@ -9,6 +9,7 @@ import { getSchema } from './schema.ts';
 import crud from './crud.ts';
 import queries from './queries.ts';
 import subprograms from './subprograms.ts';
+import shop from './shop.ts';
 
 const app = express();
 app.use(cors());
@@ -46,6 +47,7 @@ app.post('/api/refresh-schema', async (_req, res) => {
 app.use('/api', crud);
 app.use('/api', queries);
 app.use('/api', subprograms);
+app.use('/api', shop);
 
 app.listen(CONFIG.serverPort, () => {
   console.log(`\n  NexusCommerce API ready on http://localhost:${CONFIG.serverPort}`);

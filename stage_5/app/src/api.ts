@@ -79,4 +79,43 @@ export const api = {
   subprograms: () => jfetch<{ subprograms: SubProgram[] }>('/api/subprograms'),
   runSub: (key: string, params: Record<string, any>) =>
     jfetch<any>('/api/subprograms/run', { method: 'POST', body: JSON.stringify({ key, params }) }),
+
+  // ---- storefront ----
+  shop: {
+    products: (search = '', category = '') =>
+      jfetch<{ products: Product[] }>(
+        `/api/shop/products?search=${encodeURIComponent(search)}&category=${encodeURIComponent(category)}`),
+    categories: () => jfetch<{ categories: string[] }>('/api/shop/categories'),
+    customers: () => jfetch<{ customers: ShopCustomer[] }>('/api/shop/customers'),
+    shippers: () => jfetch<{ shippers: { shipperid: number; companyname: string }[] }>('/api/shop/shippers'),
+    coupon: (code: string) =>
+      jfetch<{ valid: boolean; reason?: string; couponId?: number; discountPercent?: number }>(
+        '/api/shop/coupon', { method: 'POST', body: JSON.stringify({ code }) }),
+    reviews: (productId: number) =>
+      jfetch<{ reviews: { rating: number; comment: string; reviewdate: string; customer: string }[] }>(
+        `/api/shop/product/${productId}/reviews`),
+    addReview: (productId: number, customerId: number, rating: number, comment: string) =>
+      jfetch<{ ok: boolean }>('/api/shop/review', {
+        method: 'POST', body: JSON.stringify({ productId, customerId, rating, comment }) }),
+    checkout: (payload: {
+      customerId: number; shipperId: number; shippingAddress: string;
+      couponCode?: string; items: { productId: number; quantity: number }[];
+    }) => jfetch<CheckoutResult>('/api/shop/checkout', { method: 'POST', body: JSON.stringify(payload) }),
+    orders: (customerId: number) =>
+      jfetch<{ orders: ShopOrder[] }>(`/api/shop/orders?customerId=${customerId}`),
+  },
 };
+
+export interface Product {
+  productid: number; productname: string; price: string; stockquantity: number;
+  category: string; supplier: string; avg_rating: string | null; review_count: number;
+}
+export interface ShopCustomer { customerid: number; name: string; email: string; }
+export interface CheckoutResult {
+  orderId: number; subtotal: number; discountPercent: number; total: number; itemCount: number;
+}
+export interface ShopOrder {
+  orderid: number; orderdate: string; status: string; shippingaddress: string;
+  shipper: string; items: number; discountPercent: number; total: number;
+  deliveryStatus: string | null; deliveredOn: string | null;
+}

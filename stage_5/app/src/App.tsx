@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
-  LayoutDashboard, Database, FlaskConical, LogOut, RefreshCw, Circle, ChevronRight,
+  LayoutDashboard, Database, FlaskConical, LogOut, RefreshCw, Circle, ChevronRight, Store,
 } from 'lucide-react';
 import { api, type TableMeta } from './api.ts';
 import { Logo } from './components/ui.tsx';
@@ -8,6 +8,7 @@ import Login from './components/Login.tsx';
 import Dashboard from './components/Dashboard.tsx';
 import CrudView from './components/CrudView.tsx';
 import ToolsView from './components/ToolsView.tsx';
+import Storefront from './components/store/Storefront.tsx';
 
 const GROUP_ORDER = [
   'Catalog & Inventory', 'Sales & Customers', 'Operations', 'Integrated Logistics', 'Other',
@@ -17,6 +18,7 @@ type View = { type: 'dashboard' } | { type: 'table'; key: string } | { type: 'to
 
 export default function App() {
   const [authed, setAuthed] = useState(false);
+  const [mode, setMode] = useState<'admin' | 'store'>('admin');
   const [tables, setTables] = useState<TableMeta[] | null>(null);
   const [view, setView] = useState<View>({ type: 'dashboard' });
   const [dbStatus, setDbStatus] = useState<'checking' | 'up' | 'down'>('checking');
@@ -50,6 +52,7 @@ export default function App() {
   }, [tables]);
 
   if (!authed) return <Login onSuccess={() => setAuthed(true)} />;
+  if (mode === 'store') return <Storefront onExit={() => setMode('admin')} />;
 
   const activeKey = view.type === 'table' ? view.key : null;
   const currentTable = tables?.find((t) => t.key === activeKey) || null;
@@ -107,6 +110,10 @@ export default function App() {
             {view.type === 'table' && <span>Manage records</span>}
           </div>
           <div className="flex items-center gap-3">
+            <button onClick={() => setMode('store')}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800">
+              <Store className="w-4 h-4" /> Open Storefront
+            </button>
             <span className="flex items-center gap-1.5 text-xs font-semibold">
               <Circle className={`w-2.5 h-2.5 fill-current ${
                 dbStatus === 'up' ? 'text-emerald-500' : dbStatus === 'down' ? 'text-rose-500' : 'text-amber-400'
